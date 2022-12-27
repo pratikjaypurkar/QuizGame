@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Quiz Game</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Quiz Game</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="https://pratikjaypurkar.github.io/pratik/" class="nav__link">About</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+
+        <section class="home bd-grid" id="home">
+
+            <div class="home__data">
+                <h1 class="home__title">Javascript <span class="home__title-color">Quiz </span>Game</h1>
+
+                <header class="home__title">
+                    <span id="timerArea"></span>
+                </header>
+                <section id="questionsContainer" class="hide">
+                    <div id="question"></div>
+                    <div id="answers" class="buttonArea"></div>
+                </section>
+                <section class="scores">
+                    <div id="scoreArea" class="hide"></div>
+                </section>
+                <section class="controls">
+                    <button class="button" id="startButton">START</button>
+                    <button class="btn" id="showScoresButton">See High Scores</button>
+                    <br />
+                    <div id="scoreArea" class="hide">
+                        <span id="scoreDisplay"></span>
+                        <input type="text" name="initials" id="initials" />
+                        <button id="submitScore" class="submit">Submit Score</button>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    </section>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Quiz Game</p>
+    
+        <p class="footer__copy">&#169; Quiz Game</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="./logic/script.js"></script>
+
+</body>
+
+</html>
